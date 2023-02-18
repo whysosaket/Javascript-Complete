@@ -71,3 +71,9 @@ console.log(returnSum(5,6));
 // In Javascript, functions can return a value but they DON'T have to;
 let returnValue = printSum(2,3);
 console.log(returnValue);   // In this case the function returns a undefined value
+
+// Returning boolenan from a function
+function larger(a,b){
+    return a>b;
+}
+console.log(larger(5,6));

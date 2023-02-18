@@ -48,39 +48,3 @@ sum = sum + 1;
 
 // To find remainder we use modulo operator
 sum = 10%7; // gives 3
-
-// Strings
-var myFirstName = "Saket";
-var myLastName = "Aryan";
-
-// Double Quoting - ESCAPE CHARACTERS
-var doubleQuote = "I am a \"Double Quoted\" string inside \"Double Quoted\" string."
-console.log(doubleQuote);
-
-// We can also use signle quote inside a double quote and vice versa
-doubleQuote = 'I am a "Double Quoted" string inside a \'Signle Quoted\' string.'
-
-// Another method we can use is using back ticks or `
-doubleQuote = `I am a "Double Quoted" and 'Single Quoted' string inside backticks.`
-
-// Escape Sequences in JavaScript
-
-/*****
- 
-CODE OUTPUT
-\'  single quote
-\" double quote
-\\ backslash
-\n new line
-\r carriage return
-\t tab
-\b backspace
-\f form feed
-
-*****/
-
-var myStr = "FirstLine\n\t\\SecondLine\nThirdLine"
-console.log(myStr)
-
-// String concatination with Plus Operator
-myStr = "This is the first string."+" This is the second string";

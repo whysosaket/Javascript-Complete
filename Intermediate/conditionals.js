@@ -74,3 +74,21 @@ function switchFunction(a){
 }
 
 console.log(switchFunction(1))
+
+function switchFunction2(a){
+    var answer;
+    switch(a){
+        case 0:
+        case 1:
+        case 2:
+            answer = "Paper";
+            break;
+        case 3:
+            answer = "Scissors";
+            break;
+        default:
+            answer = "Invalid Input";
+    }
+
+    return answer;
+}

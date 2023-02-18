@@ -51,3 +51,26 @@ function operatorTest(a,b){
 }
 
 console.log(operatorTest(5,123))
+
+// SWITCH Statements
+
+function switchFunction(a){
+    var answer;
+    switch(a){
+        case 0:
+            answer = "Stone";
+            break;
+        case 1:
+            answer = "Paper";
+            break;
+        case 2:
+            answer = "Scissors";
+            break;
+        default:
+            answer = "Invalid Input";
+    }
+
+    return answer;
+}
+
+console.log(switchFunction(1))

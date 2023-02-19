@@ -44,3 +44,29 @@ const TESTARRAY = [1,2,3,4];
 TESTARRAY[2] = 69;
 console.log(TESTARRAY)
 
+/***** So we conclude that Arrays can be MUTATED even it is declared with const *****/
+
+//*** Prevent OBJECT MUTATION (object.freeze()) */
+
+function freezeTest(){
+    'use strict';
+
+    const CONST = {
+        PI: 3.14
+    };
+    
+    Object.freeze(CONST);   // FIX -> to avoid object mutation
+
+    try{
+        CONST.PI = 100;
+    }catch(e){
+        console.log(e);
+    }
+    return CONST.PI;
+}
+
+const pi = freezeTest();
+console.log(pi);
+
+// Here we see that we can change the Value of an Object Property ecen though the object is declared using 'const'
+// to fix this we use Object.freeze(Object);
